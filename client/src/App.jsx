@@ -10,7 +10,7 @@ const App = () => {
   // }), [])
 
   // const socket = useMemo(() => io("http://localhost:8000"), [])
-  const socket = useMemo(() => io("https://websocket-pearl.vercel.app/"), [])
+  const socket = useMemo(() => io("https://websocket-pearl.vercel.app/", { transports : ['websocket'] }), [])
 
   const [message, setMessage] = useState("")
   const [room, setRoom] = useState("")
