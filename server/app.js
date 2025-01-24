@@ -18,7 +18,9 @@ app.use(cookieParser());
 const io = new Server(server, {
     cors: {
         // origin: "http://localhost:5173",
-        origin: "*",
+        // origin: "*",
+        origin: "https://websocket-client-six.vercel.app/",
+
 
         methods: ['GET', 'POST'],
         credentials: true
